@@ -19,6 +19,7 @@
   "homepage": "https://github.com/matthewdking/mattking#readme",
   "dependencies": {
     "express": "^4.16.2",
+    "path": "^0.12.7",
     "typed.js": "^2.0.6"
   },
   "devDependencies": {
