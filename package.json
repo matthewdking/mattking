@@ -1,0 +1,28 @@
+{
+  "name": "mattking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:start": "nodemon src/start_server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewdking/mattking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewdking/mattking/issues"
+  },
+  "homepage": "https://github.com/matthewdking/mattking#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "path": "^0.12.7",
+    "typed.js": "^2.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
