@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:start": "nodemon src/start_server.js",
-    "bundle": "browserify ./public/main.js > ./public/bundle.js"
+    "dev:start": "nodemon src/start_server.js"
   },
   "repository": {
     "type": "git",
