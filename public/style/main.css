@@ -1,3 +1,62 @@
 body {
   font-family: 'PT Sans', sans-serif;
+  color: white;
+  background-color: darkcyan;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
+
+.wrapper {
+  max-width: 60rem;
+  width: 100%;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  letter-spacing: 0.15rem;
+}
+
+/* Description for screen readers */
+
+.description-hidden {
+  display: none;
+}
+
+.description-container {
+  font-size: 3rem;
+  overflow-wrap: normal;
+  text-align: left;
+  line-height: 3.25rem;
+  font-style: italic;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.link {
+  padding-bottom: 2rem;
+}
+
+.icon {
+  padding: 0.75rem;
+  margin: 0.25rem;
+  height: 4rem;
+  opacity: 0.6;
+}
+
+.icon:hover {
+  opacity: 1;
 }
