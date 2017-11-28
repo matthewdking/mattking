@@ -1,7 +1,7 @@
 var typedDiv = document.getElementById('typed');
 
 var myDescription =
-  "I'm a full stack javascript developer. I'm a graduate of  <a href='https://foundersandcoders.com/' id='faclink'></a>.";
+  "I'm a full stack javascript developer. \nI'm a graduate of  <a href='https://foundersandcoders.com/' class='description-link' id='faclink'></a>.";
 
 var part2 =
   ' I am passionate about the environment and sustainability, and always looking for projects with a positive footprint.';
@@ -24,7 +24,7 @@ function typeText(str, element) {
       }
       typeText(str.slice(1), element);
     }
-  }, Math.random() * 20);
+  }, Math.random() * 200);
 }
 
 typeText(myDescription, typedDiv);
