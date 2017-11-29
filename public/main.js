@@ -1,30 +1,34 @@
-var typedDiv = document.getElementById('typed');
+const typedDiv = document.getElementById('typed');
 
-var myDescription =
-  "I'm a full stack javascript developer. \nI'm a graduate of  <a href='https://foundersandcoders.com/' class='description-link' id='faclink'></a>.";
+const myDescription =
+  "I'm a full stack javascript developer. $I'm a graduate of  $^Founder and Coders. $I'm passionate about the environment and sustainability, and always looking for projects with a positive footprint.";
 
-var part2 =
-  ' I am passionate about the environment and sustainability, and always looking for projects with a positive footprint.';
+const p1 = document.createElement('p');
+const p2 = document.createElement('p');
+const a1 = document.createElement('a');
+const p3 = document.createElement('p');
+typedDiv.appendChild(p1);
+typedDiv.appendChild(p2);
+typedDiv.appendChild(p3);
+a1.href = 'https://foundersandcoders.com/';
 
-var counter = 0;
+const arrayOfEl = [p1, p2, a1, p3];
 
-function typeText(str, element) {
+typeText(str, element, arr) => {
   setTimeout(() => {
-    if (str.charAt(0) === '<') {
-      element.innerHTML += str.substr(0, str.indexOf('>') + 1);
-      var faclink = document.getElementById('faclink');
-      typeText('Founders and Coders.', faclink);
-    } else if (str.length === 0 && counter === 0) {
-      counter++;
-      typeText(part2, typedDiv);
-    } else {
-      element.innerHTML += str.charAt(0);
-      if (str.length === 0) {
-        return;
+    if (str[0] === '$') {
+      if (str[1] === '^') {
+        element.appendChild(arr[1]);
+        return typeText(str.slice(2), arr[1], arr.slice(1));
       }
-      typeText(str.slice(1), element);
+      typeText(str.slice(1), arr[1], arr.slice(1));
+    } else if (str.length === 0) {
+      return;
+    } else {
+      element.textContent += str.charAt(0);
+      typeText(str.slice(1), element, arr);
     }
-  }, Math.random() * 200);
+  }, Math.random() * 100);
 }
 
-typeText(myDescription, typedDiv);
+typeText(myDescription, p1, arrayOfEl);
