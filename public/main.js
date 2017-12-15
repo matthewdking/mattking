@@ -1,7 +1,7 @@
 const typedDiv = document.getElementById('typed');
 
 const myDescription =
-  "I'm a full stack javascript developer. $I'm a graduate of  $^Founder and Coders. $I'm passionate about the environment and sustainability, and always looking for projects with a positive footprint.";
+  "I'm a full stack javascript developer. $I'm a graduate of  $^Founders and Coders. $I'm passionate about the environment and sustainability, and always looking for projects with a positive footprint.";
 
 const p1 = document.createElement('p');
 const p2 = document.createElement('p');
