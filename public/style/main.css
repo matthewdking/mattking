@@ -60,3 +60,15 @@ footer {
 .icon:hover {
   opacity: 1;
 }
+
+a:link {
+  color: #fff;
+}
+
+a:visited {
+  color: #fff;
+}
+
+a:active {
+  color: #fff;
+}
