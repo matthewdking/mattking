@@ -14,7 +14,7 @@ a1.href = 'https://foundersandcoders.com/';
 
 const arrayOfEl = [p1, p2, a1, p3];
 
-typeText(str, element, arr) => {
+const typeText = (str, element, arr) => {
   setTimeout(() => {
     if (str[0] === '$') {
       if (str[1] === '^') {
@@ -29,6 +29,6 @@ typeText(str, element, arr) => {
       typeText(str.slice(1), element, arr);
     }
   }, Math.random() * 100);
-}
+};
 
 typeText(myDescription, p1, arrayOfEl);
